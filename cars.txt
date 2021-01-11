@@ -1,0 +1,12 @@
+tabella CARS
+
+id numero INT,
+marca stringa VARCHAR(20),
+modello stringa VARCHAR(20),
+anno data YEAR,
+versione stringa VARCHAR(20),
+carburante stringa VARCHAR(20),
+tipo_di_veicolo stringa VARCHAR(10),
+cambio stringa VARCHAR(10),
+numero di Porte numero TINYINT,
+km numero INT.
