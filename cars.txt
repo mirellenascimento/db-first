@@ -1,12 +1,13 @@
 tabella CARS
 
-id numero INT,
-marca stringa VARCHAR(20),
-modello stringa VARCHAR(20),
-anno data YEAR,
-versione stringa VARCHAR(20),
-carburante stringa VARCHAR(20),
-tipo_di_veicolo stringa VARCHAR(10),
-cambio stringa VARCHAR(10),
-numero di Porte numero TINYINT,
-km numero INT.
+id numero INT PRIMARY_KEY (UNIQUE, AUTO_INCREMENT),
+marca stringa VARCHAR(20) NOTNULL,
+modello stringa VARCHAR(50) NOTNULL,
+anno data YEAR NOTNULL,
+versione stringa VARCHAR(50) NULL,
+carburante stringa VARCHAR(20) DEFAULT(benzina) NOTNULL,
+tipo_di_veicolo stringa VARCHAR(20) NULL,
+cambio stringa VARCHAR(10) DEFAULT(manuale) NOTNULL,
+numero di Porte numero TINYINT DEFAULT(5),
+km numero MEDIUMINT DEFAULT(0) NOTNULL,
+descrizione string TEXT NULL.
